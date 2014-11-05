@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.esiea.mobile.myapplication.DetailActivity"
+    android:padding="5dp">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fgt_listSunrise"
+        android:name="fr.esiea.com.ratemysunrise.SunriseListFragment"
+        tools:layout="@layout/fgt_sunrise_list"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fgt_sunrise"
+        android:name="fr.esiea.com.ratemysunrise.SunriseFragment"
+        tools:layout="@layout/fgt_sunrise"
+        android:layout_weight="1"/>
+
+</LinearLayout>
